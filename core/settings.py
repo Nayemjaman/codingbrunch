@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 CUSTOM_APPS = [
     'blog',
+    'taggit',
 ]
 
 INSTALLED_APPS = [

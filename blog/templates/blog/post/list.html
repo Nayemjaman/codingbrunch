@@ -4,7 +4,15 @@
 
 
 <h1>My Blog</h1>
+{% if tag %}
+<h2>Posts tagged with "{{ tag.name }}"</h2>
+{% endif %}
 {% for post in posts %}
+{% if tag %}
+<h2>Posts tagged with "{{ tag.name }}"</h2>
+{% endif %}
+
+    <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
 <h2>
 <a href="{{ post.get_absolute_url }}">
 {{ post.title }}
@@ -15,5 +23,6 @@ Published {{ post.publish }} by {{ post.author }}
 </p>
 {{ post.body|truncatewords:30|linebreaks }}
 {% endfor %}
+
 {% include "pagination.html" with page=posts %}
 {% endblock %}

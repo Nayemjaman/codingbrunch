@@ -1,21 +1,46 @@
+<!DOCTYPE html>
 {% load blog_tags %}
 {% load static %}
-<!DOCTYPE html>
-<html>
+
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>{% block title %}{% endblock %}</title>
-    <link href="{% static "css/blog.css" %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
 </head>
 <body>
-    <p>This is my blog. I've written {% total_posts %} posts so far.</p>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+      <li class="nav-item active">
+          <p class="p-2 text-danger">Total posts {% total_posts %}.</p>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#"></a>
+    </li>
+  </ul>
+</nav>
+
+
+
     <div id="content">
         {% block content %}
         {% endblock %}
     </div>
-    <div id="sidebar">
-        <h2>My blog</h2>
-        <p>This is my blog.</p>
-    </div>
+
 <div id="sidebar">
     <h3>Most commented posts</h3>
 {% get_most_commented_posts as most_commented_posts %}
@@ -26,11 +51,12 @@
 </li>
 {% endfor %}
 </ul>
-<h2>My blog</h2>
-<p>This is my blog. I've written {% total_posts %} posts so far.</p>
+
 <h3>Latest posts</h3>
 {% show_latest_posts 3 %}
 </div>
+
+
 
 </body>
 </html>

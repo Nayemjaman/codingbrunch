@@ -17,8 +17,8 @@ Published {{ post.publish }} by {{ post.author }}
     <br>
 <div class="col-lg-12">
      <form method="post">
- {{ comment_form.as_p }}
- {% csrf_token %}
+     {{ comment_form.as_p }}
+    {% csrf_token %}
  <p><input type="submit" value="Add comment"></p>
  </form>
 </div>

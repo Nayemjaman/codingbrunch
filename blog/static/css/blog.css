@@ -4,14 +4,11 @@ body {
     font-family:helvetica, sans-serif;
 }
 
-a {
-    color:#00abff;
-    text-decoration:none;
-}
+
 
 h1 {
     font-weight:normal;
-    border-bottom:1px solid #bbb;
+    border-bottom:1px solid rgb(240, 234, 234);
     padding:0 0 10px 0;
 }
 
@@ -35,7 +32,7 @@ h2 {
 }
 
 p.date {
-    color:#ccc;
+    color:rgb(17, 15, 15);
     font-family: georgia, serif;
     font-size: 12px;
     font-style: italic;
@@ -90,3 +87,7 @@ input[type=submit] {
     font-size:12px;
     color:#666;
 }
+
+
+
+

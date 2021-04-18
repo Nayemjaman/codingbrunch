@@ -5,7 +5,8 @@
 <p class="date">
 Published {{ post.publish }} by {{ post.author }}
 </p>
-{{ post.body|linebreaks }}
+{{ post.body|safe|linebreaks }}
+
 
 
 <div class="container">

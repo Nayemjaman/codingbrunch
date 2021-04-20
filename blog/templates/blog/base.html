@@ -11,6 +11,7 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 <body>
 
@@ -31,6 +32,9 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Contact</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About us</a>
+    </li>
   </ul>
 </nav>
 
@@ -42,6 +46,28 @@
     </div>
 
 <div id="sidebar">
+
+    <div class="middle bg-info">
+      <a class="btn" href="https://www.facebook.com/nayem.jamantusar/" target="blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn" href="https://www.instagram.com/nayemjaman/" target="blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn" href="#">
+        <i class="fab fa-google"></i>
+      </a>
+      <a class="btn" href="#">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="btn" href="#">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+
+
+
     <h3>Most commented posts</h3>
 {% get_most_commented_posts as most_commented_posts %}
 <ul>

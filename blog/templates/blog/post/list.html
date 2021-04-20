@@ -5,20 +5,17 @@
 
 
 <h1>Total  <b>{% total_posts %}</b> posts</h1>
-{% if tag %}
-<h2>Posts tagged with "{{ tag.name }}"</h2>
-{% endif %}
-{% for post in posts %}
-{% if tag %}
-<h2>Posts tagged with "{{ tag.name }}"</h2>
-{% endif %}
 
-    <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
+{% for post in posts %}
+
+
+
 <h2>
 <a href="{{ post.get_absolute_url }}">
 {{ post.title }}
 </a>
 </h2>
+    <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
 <p class="date">
 Published {{ post.publish }} by {{ post.author }}
 </p>

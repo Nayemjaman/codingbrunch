@@ -1,0 +1,17 @@
+asgiref==3.3.1
+dj-database-url==0.5.0
+dj-static==0.0.6
+Django==3.1.3
+django-ckeditor==6.0.0
+django-js-asset==1.2.2
+django-taggit==1.2.0
+docopt==0.6.2
+gitignore==0.0.8
+gunicorn==20.1.0
+Markdown==3.2.1
+psycopg2==2.8.6
+psycopg2-binary==2.8.4
+pytz==2020.4
+sqlparse==0.4.1
+static3==0.7.0
+whitenoise==5.2.0

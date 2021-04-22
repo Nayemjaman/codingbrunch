@@ -1,1 +1,1 @@
-web: gunincorn codingbranch.wsgi --log-file
+web: gunicorn core.wsgi --log-file -

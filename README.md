@@ -7,11 +7,11 @@
 
 ## Key Features 
 
-1.Seeing all the blog posts
-2.Creating a new blog post. [authenticated users ]
-3.Editing a blog post written by that particular user. [authenticated users ]
-4.Deleting a blog post written by that particular user. [authenticated users ]
-5.Seeing the blog posts written by a specific user. [authenticated users ]
+1.Seeing all the blog posts  
+2.Creating a new blog post. [authenticated users ]  
+3.Editing a blog post written by that particular user. [authenticated users ]  
+4.Deleting a blog post written by that particular user. [authenticated users ]  
+5.Seeing the blog posts written by a specific user. [authenticated users ]  
 
 
 

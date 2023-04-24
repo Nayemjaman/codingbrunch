@@ -13,6 +13,7 @@ In this project, I build a blog website with Django and Bootstrap.
 ## Key Features 
 
 1.Seeing all the blog posts written by a specific user.
+
 2.Also authenticated users create new blog posts, edit and delete their own blog posts. 
 
 

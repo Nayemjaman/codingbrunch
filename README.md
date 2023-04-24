@@ -6,12 +6,14 @@
 [![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://github.dev/Nayemjaman/codingbrunch)
 </hr>
 
-In this project, I build a blog website with Django.
+
+Welcome to the codingbrunch repository!
+In this project, I build a blog website with Django and Bootstrap.
 
 ## Key Features 
 
-1.Seeing all the blog posts  
-2.Also create new blog posts , edit their own blog posts , delete their own blog posts , and view blog posts written by a specific user (if authenticated). 
+1.Seeing all the blog posts written by a specific user.
+2.Also authenticated users create new blog posts, edit and delete their own blog posts. 
 
 
 

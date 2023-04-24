@@ -8,10 +8,7 @@
 ## Key Features 
 
 1.Seeing all the blog posts  
-2.Creating a new blog post. [authenticated users ]  
-3.Editing a blog post written by that particular user. [authenticated users ]  
-4.Deleting a blog post written by that particular user. [authenticated users ]  
-5.Seeing the blog posts written by a specific user. [authenticated users ]  
+2.Also create new blog posts , edit their own blog posts , delete their own blog posts , and view blog posts written by a specific user (if authenticated). 
 
 
 
@@ -23,3 +20,6 @@ django-ckeditor==6.5.1
 django-js-asset==2.0.0
 django-taggit==3.1.0
 ```
+
+
+
